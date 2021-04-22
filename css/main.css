@@ -1,0 +1,641 @@
+/*STYLESHEET*/
+
+body {
+	height: 100vh;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+h2 {
+	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
+	font-weight: 700;	
+}
+
+h3 {
+	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: 'Cabin', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+button {
+	font-family: 'Cabin', sans-serif;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-radius: 6px;
+	background-color: #ABC4AB;
+	border-style: none;
+	padding: .5rem;
+	color: #F2EAE0;
+	margin-right: 2rem;
+}
+
+a {
+	color: #F2EAE0;
+	text-decoration: none;
+}
+
+button:active, a:active {
+	background-color: #98AE98;
+	color: #F2EAE0;
+}
+
+label {
+	font-family: 'Cabin', sans-serif;
+	font-size: 18px;
+	color: #DECEB5;
+}
+
+input {
+	width: 347.51px;
+	padding: .5rem;
+	margin: 1rem 0rem 4rem 0rem;
+	background-color: #453A50;
+	border-color: #F2EAE0;
+	border-style: solid;
+	font-family: 'Cabin', sans-serif;
+	transition: 0.3s;
+	color: #F2EAE0;
+}
+
+input:focus, input:active {
+	background-color: #453A50;
+	border-color: #ABC4AB;
+	border-style: solid;
+}
+
+/* input:invalid {
+	background-color: #453A50;
+	border-color: #DB6F6B;
+	border-style: solid;
+} */
+
+form {
+	padding-bottom:1rem;
+}
+
+.helpme-link {
+	color:#DB6F6B;
+	text-decoration: underline;
+	font-family: 'Cabin', sans-serif;
+}
+
+
+
+/*STYLESHEET*/
+
+/*SPLASH PAGE*/
+
+.page-splash {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	height: 100vh;
+	background-color: #4B3E59;
+}
+
+.page-splash-image {
+	grid-column: 1 / span 3;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page-splash-image img {
+	flex-shrink: 0;
+	width: 284px;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.page-splash-info {
+	grid-column: 4 / span 12;
+	display:grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	height: 100vh;
+	width: 100%;
+	border: solid #DB6F6B;
+    border-width: 7px;
+    border-top:none;
+    border-bottom:none;
+    border-right:none;
+}
+
+.page-splash-header {
+	grid-row: 1;
+	background-color: #3D3448;
+}
+
+.page-splash-header img {
+	width: 203px;
+	padding: 2rem 2rem 2rem 4rem;
+}
+
+.page-splash-body {
+	grid-row: 2;
+	background-color: #4B3E59;
+	padding: 2rem 2rem 134px 4rem;
+	color: #DECEB5;
+}
+
+.page-splash-special-text {
+	color: #F2EAE0;
+}
+
+.to-begin {
+	padding-top: 2rem;
+}
+
+.page-splash-footer {
+	grid-row: 3;
+	background-color: #3D3448;
+}
+
+/*SPLASH PAGE*/
+
+/*LOGIN PAGE*/
+
+.page-login-title {
+	color: #F2EAE0;
+	padding-bottom: 4rem;
+}
+
+/*LOGIN PAGE*/
+
+/*HOME PAGE*/
+
+.page-home-body {
+	grid-row: 2;
+	background-color: #4B3E59;
+	padding: 2rem 2rem 2rem 4rem;
+	color: #DECEB5;
+}
+
+.page-home-body ol {
+  margin: 5rem 0rem 0rem 0rem;
+  padding: 0 0 0 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page-home-body li {}
+
+.page-home-body a {
+  display: block;
+  background: #DECEB5 url(../img/special-exhibits.jpg) 50% 50%;
+  background-size: cover;
+  text-decoration: none;
+  color:#4B3E59;
+  text-align: left;
+  border-radius: 25px;
+  width: 9rem;
+  height: 9rem;
+  font-family: 'Cabin', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.page-home-body li button {
+  bottom: -43px;
+  position: relative;
+  background-color: #4B3E59;
+  color: #DECEB5;
+}
+
+/*HOME PAGE*/
+
+/*BASIC SHOPPING PAGE*/
+
+.page-shopping {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	height: 100vh;
+	background-color: #4B3E59;
+}
+
+.page-shopping-menu {
+	grid-column: 1 / span 3;
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.page-shopping-menu-header {
+	background-color: #3D3448;
+	grid-row: 1;
+}
+
+.page-shopping-menu-header img {
+	width: 73px;
+	position: relative;
+  	top: 28%;
+  	left: 35%;
+}
+
+.page-shopping-menu-content {
+	grid-row: 2 / span 4;
+}
+
+.page-shopping-info {
+	grid-column: 4 / span 12;
+	display:grid;
+	height: 100vh;
+	width: 100%;
+	border: solid #DB6F6B;
+    border-width: 7px;
+    border-top:none;
+    border-bottom:none;
+    border-right:none;
+}
+
+.page-shopping-body {
+	background-color: #F2EAE0;
+	padding: 56px 2rem 134px 4rem;
+	color: #DECEB5;
+	padding: 1rem 0rem 0rem 3rem;
+}
+
+.page-shopping-body h1 h3 p {
+	padding: 0rem;
+	margin: 12px;
+	color: #4B3E59;
+}
+
+.page-shopping-menu-content ol {
+	list-style: none;
+	padding: 0;
+	width: 70%;
+	margin: 74px 15% 0 15%;
+}
+
+.page-shopping-menu-content li a {
+	color: #B6B0BC;
+	font-family: 'Cabin', sans-serif;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.page-shopping-menu-content li {
+	text-align: center;
+	margin: 1.5rem;
+	color: #B6B0BC;
+	padding: .5rem;
+}
+
+.active-menu-item {
+	background-color: #B6B0BC;
+	border-radius: 16px;
+}
+
+.page-shopping-menu-content .active-menu-item a {
+	color: #4B3E59;
+}
+
+.menu-cart-icon img {
+	width: 48px;
+}
+
+/*BASIC SHOPPING PAGE*/
+
+/*GENERAL ADMITTANCE*/
+
+.counter-container {
+  background-color: #E8DECD;
+  display: grid;
+  grid-template-rows: 4.25rem;
+  grid-template-columns: 2rem 13rem 4rem 4rem;
+  width: 14rem;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: #4B3E59;
+  margin-bottom: 2rem;
+}
+
+.counter-container p {
+  margin: 0;
+  position: relative;
+  top: 32%;
+  font-family: 'Cabin', sans-serif;
+  font-size: 19px;
+  margin-left: 1rem;
+  color: #4B3E59;
+}
+
+.counter-display {
+  grid-row: 1;
+  grid-column: 1;
+}
+.people {
+  grid-row: 1;
+  grid-column: 2;
+  margin-left: 2.4rem;
+}
+
+.counter-container button {
+  background-color: transparent;
+  font-size: 40px;
+  border-style: none;
+  color: #4B3E59;
+}
+
+.counter-minus {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.counter-plus {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.ticket-selectors-general-body h3 {
+	font-size: 16px;
+	color: #4B3E59;
+	margin: 0rem;
+}
+
+.ticket-selectors-general-body {
+	margin-top: 60px;
+}
+
+/*GENERAL ADMITTANCE*/
+
+/*SPECIAL EXHIBITS*/
+
+.shopping-headings {
+	color: #4B3E59;
+}
+
+/*.ticket-selectors-special {
+	background-color: #F2EAE0;
+	margin-bottom: 35px;
+	margin-right: 5rem;
+	background-color: #F2EAE0;
+	border-radius: 16px;
+	border-style: solid;
+	border-color: #4B3E59;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.ticket-selectors-special h3 {
+	font-size: 22px;
+	margin: 0rem;
+	padding: 1rem;
+	color: #4B3E59;
+	grid-column: 1 ;
+	width: 438px;
+}
+
+.special-exhibit-expand-card {
+	color: #4B3E59;
+	background-color: transparent;
+	font-size: 40px;
+	grid-column: 2;
+	margin: 0rem 1rem 0rem 1rem;
+	padding: 0rem;
+	text-align: right;
+
+} */
+
+.collapsible {
+  background-color: #F2EAE0;
+  color: #4B3E59;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0rem;
+  width: 31rem;
+  text-align: left;
+  outline: none;
+  font-size: 22px;
+  border-radius: 16px;
+	border-style: solid;
+	border-color: #4B3E59;
+  border-width: 2px;
+  transition: max-height .2s ease-out;
+}
+
+.active {
+  background-color: #4B3E59;
+  transition: max-height .4s ease-out;
+  border-style: none;
+  border-radius: 16px 16px 0px 0px;
+  color: #F2EAE0;
+} 
+
+.collapsible:active {
+  background-color: #4B3E59;
+}
+
+.content {
+  padding: 0rem;
+  margin: 0rem;
+  background-color: #4B3E59;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease-out;
+  width: 31rem;
+  border-radius: 0px 0px 16px 16px;
+}
+
+.content p {
+  color: red;
+  margin: 0rem 0rem 1rem 1rem;
+  width: 27rem;
+  color: #F2EAE0;
+}
+
+.content button {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.collapsible:after {
+  content: '\02795'; 
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; 
+}
+
+.ticket-selectors-special {
+	margin-bottom: 35px;
+	margin-right: 5rem;
+}
+
+.ticket-selectors-special-body {
+	margin-top: 60px;
+}
+
+/*SPECIAL EXHIBITS*/
+
+/*MEMBERSHIP*/
+
+.ticket-selectors-member {
+	background-color: #F2EAE0;
+	margin-bottom: 35px;
+	margin-right: 5rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	width: 568px;
+	height: 130px;
+	border-style: solid;
+	border-color: #4B3E59;
+	border-radius: 16px;
+  text-decoration: none;
+}
+
+.member-months {
+	grid-column: 1;
+	margin: 0rem;
+	padding: 0rem;
+}
+
+.ticket-selectors-member:focus {
+  background-color: #4B3E59;
+  border-style: none;
+}
+
+.ticket-selectors-member:focus h1 {
+  color: #F2EAE0;
+}
+
+.ticket-selectors-member:focus h2 {
+  color: #F2EAE0;
+}
+
+.ticket-selectors-member:focus p {
+  color: #F2EAE0;
+}
+
+.ticket-selectors-member:focus button {
+  border-style: none;
+	background-color: #ABC4AB;
+	color: #F2EAE0;
+}
+
+.ticket-selectors-member:active {
+  background-color: #4B3E59;
+  border-style: none;
+}
+
+.ticket-selectors-member:active h1 {
+  color: #F2EAE0;
+}
+
+.ticket-selectors-member:active h2 {
+  color: #F2EAE0;
+}
+
+.ticket-selectors-member:active p {
+  color: #F2EAE0;
+}
+
+.ticket-selectors-member:active button {
+  border-style: none;
+	background-color: #ABC4AB;
+	color: #F2EAE0;
+}
+
+
+
+.member-months h1 {
+	font-family: 'Cabin', sans-serif;
+	font-size: 59px;
+	text-align: right;
+	padding: 0rem 0rem 1rem 0rem;
+	margin: .5rem 2rem 0rem 0rem;
+	height: 59px;
+	color: #4B3E59;
+}
+
+.member-months h2 {
+	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
+	text-align: right;
+	padding: 0rem;
+	margin: 0rem 2rem 0rem 0rem;
+	color: #4B3E59;
+}
+
+.ticket-selectors-member p {
+	grid-column: 2;
+	padding: 0rem 0rem 0rem 1rem;
+	margin: 20% 0rem 0rem 0rem;
+	grid-row: 1;
+	color: #4B3E59;
+	text-align: left;
+	width: 139px;
+}
+
+.ticket-selectors-member button {
+	grid-column: 4;
+	margin: 2.5rem 2.2rem 0rem 0rem;
+	padding: 0rem 0rem 0rem 0rem;
+	height: 48px;
+	border-style: solid;
+	border-color: #4B3E59;
+	border-radius: 16px;
+	background-color: transparent;
+	color: #4B3E59;
+	width: 100px;
+}
+
+.ticket-selectors-member-body {
+	margin-top: 60px;
+}
+
+/*MEMBERSHIP*/
+
+/*CART*/
+
+.page-cart {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	height: 100vh;
+	background-color: #4B3E59;
+}
+
+.page-cart-payment-selection {
+	background-color: #F2EAE0;
+	grid-column: 4 / span 5;
+}
+
+.page-cart-payment-selection h3 {
+	color: #4B3E59;
+	margin: 2rem 0rem 0rem 2rem;
+}
+
+.page-cart-item-count {
+	background-color: #4B3E59;
+	grid-column: 9 / span 12;
+}
+
+.page-cart-item-count h3 {
+	color: #F2EAE0;
+	margin: 2rem 0rem 0rem 2rem;
+}
+
+/*CART*/
+
+
+

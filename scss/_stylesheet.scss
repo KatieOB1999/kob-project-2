@@ -1,0 +1,50 @@
+/*STYLESHEET*/
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  font-weight: 700; 
+}
+
+h3 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+button {
+  font-family: 'Cabin', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-radius: 6px;
+  background-color: #ABC4AB;
+  border-style: none;
+  padding: .5rem;
+  color: #F2EAE0;
+  margin-right: 2rem;
+}
+
+a {
+  color: #F2EAE0;
+  text-decoration: none;
+}
+
+button:active, a:active {
+  background-color: #98AE98;
+  color: #F2EAE0;
+}
+
+/*STYLESHEET*/

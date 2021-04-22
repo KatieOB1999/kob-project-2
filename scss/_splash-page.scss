@@ -1,0 +1,62 @@
+/*SPLASH PAGE*/
+
+.page-splash {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 100vh;
+}
+
+.page-splash-image {
+  grid-column: 1 / span 3;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.page-splash-image img {
+  flex-shrink: 0;
+  width: 284px;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.page-splash-info {
+  grid-column: 4 / span 12;
+  display:grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
+  width: 100%;
+}
+
+.page-splash-header {
+  grid-row: 1;
+  background-color: #3D3448;
+}
+
+.page-splash-header img {
+  width: 203px;
+  padding: 2rem;
+}
+
+.page-splash-body {
+  grid-row: 2;
+  background-color: #4B3E59;
+  padding: 2rem 2rem 134px 2rem;
+  color: #DECEB5;
+}
+
+.page-splash-special-text {
+  color: #F2EAE0;
+}
+
+.to-begin {
+  padding-top: 2rem;
+}
+
+.page-splash-footer {
+  grid-row: 3;
+  background-color: #3D3448;
+}
+
+/*SPLASH PAGE*/
