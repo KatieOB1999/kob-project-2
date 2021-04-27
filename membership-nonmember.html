@@ -23,31 +23,30 @@
     <div class="page-shopping-menu-content">
       <ol>
         <li><a href="general-admittance-nonmember.html">General <br> Admittance</a></li>
-        <li class="active-menu-item"><a href="special-exhibit-nonmember.html">Special <br> Exhibits</a></li>
-        <li><a href="membership-nonmember.html">Membership</a></li>
+        <li><a href="special-exhibit-nonmember.html">Special <br> Exhibits</a></li>
+        <li class="active-menu-item"><a href="membership-nonmember.html">Membership</a></li>
         <li>•</li>
-        <li><a href="nonmember-cart.html" class="menu-cart-icon"><img src="img/cart-icon.svg"></a></li>
+        <li><a href="non-member-cart.html" class="menu-cart-icon"><img src="img/cart-icon.svg"></a></li>
         <li><a href="index.html">Sign Out</a></li>
-
       </ol>
     </div>
   </div>
 
   <div class="page-shopping-info">
     <div class="page-shopping-body">
-      <h1 class="shopping-headings">Special Exhibits</h1>
-      <p class="shopping-headings"> Please select the exhibit or show to reserve and purchase tickets. </p>
 
-<div class="ticket-selectors-special-body">
+      
+      <h1 class="shopping-headings">Membership</h1>
+      <h3 class="shopping-headings">Purchase</h3>
+      <p class="shopping-headings"> Buying a membership to the museum can unlock all sorts of fun experiences & possibilities! </p>
+      
+      <div class="ticket-selectors-member-body">
+        
+      <a href="#" class="ticket-selectors-member"> 
+        <div class="member-months"><h1>3</h1><h2>months</h2></div>
+        <p> exp. July 6 2021 <br> $30 per month <br> <strong>$90 USD</strong> </p>
 
-<div class="ticket-selectors-special">
-  <button type="button" class="collapsible"><strong>Planetarium Show</strong></button>
-  <div class="content">
-    <p> <i>$1.50 per person - (Everyday @ 1PM, 3PM, 5PM, 6PM)</i> <br>
-Experience our live show about what's visible in the sky the night of your visit led by our resident astronomer. 
-</p>
-        <button id="confirm-cart1">Confirm</button>
-
+<button id="confirm-cart1">Confirm</button>
 <div id="cart-confirm-popup1" class="cart-confirm-popup">
   <div class="cart-confirm-popup-content">
     <span class="close-popup close-popup1">&times;</span>
@@ -57,17 +56,14 @@ Experience our live show about what's visible in the sky the night of your visit
     <button class="view-cart-button"><a href="cart.html">view cart</a></button>
   </div>
 </div>
-  </div>
-</div>
-        
-<div class="ticket-selectors-special">
-  <button type="button" class="collapsible"><strong>The art of bugs</strong></button>
-  <div class="content">
-    <p> <i>$3 per person - (July 25 2020 - May 10 2021) </i> <br>
-Stop by to take in the beauty of our often misunderstood insect friends! Our collection of stunningly handcrafted scientific models is larger than life. 
-</p>
-        <button id="confirm-cart2">Confirm</button>
 
+      </a>
+
+      <a href="#" class="ticket-selectors-member"> 
+        <div class="member-months"><h1>6</h1><h2>months</h2></div>
+        <p> exp. Oct. 6 2021 <br> $25 per month <br> <strong>$150 USD</strong> </p>
+
+<button id="confirm-cart2">Confirm</button>
 <div id="cart-confirm-popup2" class="cart-confirm-popup">
   <div class="cart-confirm-popup-content">
     <span class="close-popup close-popup2">&times;</span>
@@ -77,18 +73,14 @@ Stop by to take in the beauty of our often misunderstood insect friends! Our col
     <button class="view-cart-button"><a href="cart.html">view cart</a></button>
   </div>
 </div>
-  </div>
-</div>
-        
-<div class="ticket-selectors-special">
-  <button type="button" class="collapsible"><strong>pirate treasures: around the globe</strong></button>
-  <div class="content">
-    <p> <i>$3 per person - (Dec 16 2021 - June 15 2021)</i> <br>
-Arghh Mateys! Gaze upon the treasures obtained plundered the years by feared pirate captain Gullivarr before his crew overthrew him in a mutiny. 
-</p>
 
-    <button id="confirm-cart3">Confirm</button>
+      </a>
+      
+      <a href="#" class="ticket-selectors-member"> 
+        <div class="member-months"><h1>12</h1><h2>months</h2></div>
+        <p> exp. April 6 2022 <br> $18 per month <br> <strong>$216 USD</strong> </p>
 
+<button id="confirm-cart3">Confirm</button>
 <div id="cart-confirm-popup3" class="cart-confirm-popup">
   <div class="cart-confirm-popup-content">
     <span class="close-popup close-popup3">&times;</span>
@@ -99,10 +91,9 @@ Arghh Mateys! Gaze upon the treasures obtained plundered the years by feared pir
   </div>
 </div>
 
-  </div>
-</div>
-        
-</div>
+      </a>
+
+      </div>
       
     </div>
   </div>
@@ -119,7 +110,7 @@ Arghh Mateys! Gaze upon the treasures obtained plundered the years by feared pir
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 
-  <script> 
+    <script> 
 var modal = document.getElementById("cart-confirm-popup1");
 
 var btn = document.getElementById("confirm-cart1");

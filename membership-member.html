@@ -26,7 +26,8 @@
         <li><a href="special-exhibit-member.html">Special <br> Exhibits</a></li>
         <li class="active-menu-item"><a href="membership-member.html">Membership</a></li>
         <li>•</li>
-        <li><a href="cart.html" class="menu-cart-icon"><img src="img/cart-icon.svg"></a></li> 
+        <li><a href="cart.html" class="menu-cart-icon"><img src="img/cart-icon.svg"></a></li>
+        <li><a href="index.html">Sign Out</a></li>
       </ol>
     </div>
   </div>
@@ -44,19 +45,52 @@
       <a href="#" class="ticket-selectors-member"> 
         <div class="member-months"><h1>3</h1><h2>months</h2></div>
         <p> exp. July 6 2021 <br> $30 per month <br> <strong>$90 USD</strong> </p>
-        <button> renew </button>
+
+<button id="confirm-cart1">Confirm</button>
+<div id="cart-confirm-popup1" class="cart-confirm-popup">
+  <div class="cart-confirm-popup-content">
+    <span class="close-popup close-popup1">&times;</span>
+  <div class="h1-popup-content"><h1>Confirmation!</h1></div>
+   <div class="p-popup-content"><p> Your selection has been added to your cart! Is there anything else we can help you with? </p> </div>
+    <button class="continue-shopping-button"><a href="special-exhibit-member.html">continue</a></button>
+    <button class="view-cart-button"><a href="cart.html">view cart</a></button>
+  </div>
+</div>
+
       </a>
 
       <a href="#" class="ticket-selectors-member"> 
         <div class="member-months"><h1>6</h1><h2>months</h2></div>
         <p> exp. Oct. 6 2021 <br> $25 per month <br> <strong>$150 USD</strong> </p>
-        <button> renew </button>
+
+<button id="confirm-cart2">Confirm</button>
+<div id="cart-confirm-popup2" class="cart-confirm-popup">
+  <div class="cart-confirm-popup-content">
+    <span class="close-popup close-popup2">&times;</span>
+  <div class="h1-popup-content"><h1>Confirmation!</h1></div>
+   <div class="p-popup-content"><p> Your selection has been added to your cart! Is there anything else we can help you with? </p> </div>
+    <button class="continue-shopping-button"><a href="special-exhibit-member.html">continue</a></button>
+    <button class="view-cart-button"><a href="cart.html">view cart</a></button>
+  </div>
+</div>
+
       </a>
       
       <a href="#" class="ticket-selectors-member"> 
         <div class="member-months"><h1>12</h1><h2>months</h2></div>
         <p> exp. April 6 2022 <br> $18 per month <br> <strong>$216 USD</strong> </p>
-        <button> renew </button>
+
+<button id="confirm-cart3">Confirm</button>
+<div id="cart-confirm-popup3" class="cart-confirm-popup">
+  <div class="cart-confirm-popup-content">
+    <span class="close-popup close-popup3">&times;</span>
+  <div class="h1-popup-content"><h1>Confirmation!</h1></div>
+   <div class="p-popup-content"><p> Your selection has been added to your cart! Is there anything else we can help you with? </p> </div>
+    <button class="continue-shopping-button"><a href="special-exhibit-member.html">continue</a></button>
+    <button class="view-cart-button"><a href="cart.html">view cart</a></button>
+  </div>
+</div>
+
       </a>
 
       </div>
@@ -75,6 +109,69 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+    <script> 
+var modal = document.getElementById("cart-confirm-popup1");
+
+var btn = document.getElementById("confirm-cart1");
+
+var span = document.getElementsByClassName("close-popup1")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}</script>
+
+  <script> 
+var modal = document.getElementById("cart-confirm-popup2");
+
+var btn = document.getElementById("confirm-cart2");
+
+var span = document.getElementsByClassName("close-popup2")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}</script>
+
+  <script> 
+var modal = document.getElementById("cart-confirm-popup3");
+
+var btn = document.getElementById("confirm-cart3");
+
+var span = document.getElementsByClassName("close-popup3")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}</script>
 
 </body>
 
